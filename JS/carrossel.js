@@ -201,6 +201,46 @@ nextButton.addEventListener('click', () => {
 });
 
 
+var imagens = document.getElementsByClassName("image-container");
+for (var i = 0; i < imagens.length; i++) {
+  imagens[i].addEventListener("mouseover", function() {
+    this.classList.add("hover");
+  });
+  imagens[i].addEventListener("mouseout", function() {
+    this.classList.remove("hover");
+  });
+}
+
+
+
+
+
+
+
+// Configuração dos cards que apareceram nas imagens
+
+var items = document.getElementsByClassName("carousel-images");
+for (var i = 0; i < items.length; i++) {
+  var img = items[i].getElementsByTagName("img")[0];
+  console.log(img);
+  var card = items[i].getElementsByClassName("card")[0];
+
+  img.addEventListener("click", function() {
+    card.style.display = "block";
+  });
+
+  img.addEventListener("mouseleave", function() {
+    card.style.display = "none";
+  });
+
+  card.addEventListener("mouseleave", function() {
+    card.style.display = "none";
+  });
+}
+
+
+
+
 
 
 
