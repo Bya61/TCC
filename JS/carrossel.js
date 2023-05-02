@@ -9,7 +9,7 @@ setInterval(function(){
 
 nextImagem();
 
-}, 2000)
+}, 3000)
 
 
 
@@ -219,24 +219,28 @@ for (var i = 0; i < imagens.length; i++) {
 
 // Configuração dos cards que apareceram nas imagens
 
-var items = document.getElementsByClassName("carousel-images");
-for (var i = 0; i < items.length; i++) {
-  var img = items[i].getElementsByTagName("img")[0];
-  console.log(img);
-  var card = items[i].getElementsByClassName("card")[0];
+var images = document.querySelectorAll(".carousel-images img");
 
+images.forEach(function(img) {
   img.addEventListener("click", function() {
+    var card = this.parentNode.querySelector(".card");
     card.style.display = "block";
   });
 
   img.addEventListener("mouseleave", function() {
+    var card = this.parentNode.querySelector(".card");
     card.style.display = "none";
   });
+});
 
+var cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card) {
   card.addEventListener("mouseleave", function() {
-    card.style.display = "none";
+    this.style.display = "block";
   });
-}
+});
+
 
 
 
