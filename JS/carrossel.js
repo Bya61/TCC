@@ -242,6 +242,22 @@ cards.forEach(function(card) {
 });
 
 
+// itera sobre as imagens
+images.forEach(function(image) {
+  // adiciona um event listener para detectar quando o mouse passa sobre a imagem
+  image.addEventListener('mouseover', function() {
+    // exibe o card correspondente
+    this.parentNode.querySelector('.card').style.display = 'block';
+  });
+  
+  // adiciona um event listener para detectar quando o mouse deixa a imagem
+  image.addEventListener('mouseout', function() {
+    // oculta o card correspondente
+    this.parentNode.querySelector('.card').style.display = 'none';
+  });
+});
+
+
 
 
 
