@@ -53,7 +53,7 @@
     padding: 1rem .8rem;
     }
     
-     
+    
 
      /*Configurações de grid*/
 
@@ -233,6 +233,12 @@ h1 {
     
     #radio2:checked ~ .primeiro{
         margin-left: -25%;
+    }
+
+    /*imagem que aparecerá na tela responsiva*/
+
+    .imagem-alternativa {
+      display: none;
     }
     
     #radio3:checked ~ .primeiro{
