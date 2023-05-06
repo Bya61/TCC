@@ -10,7 +10,7 @@
       
      }
     h1 {
-      font-size: 240%;
+      font-size: 360%;
       line-height: 150px;
       text-align:center;
       width: 100%;
@@ -61,7 +61,7 @@
   
           .slider {
             width: 100%;
-            height: 350px;
+            height: 850px;
           }
   
           .slide {
@@ -72,7 +72,7 @@
           
           .slide img {
             width: 80%;
-            height:320px;
+            height:180%;
           }
 
           #radio1:checked ~ .primeiro{
@@ -87,7 +87,9 @@
             margin-left: -68%;
         }
 
-        
+        .manual-navigation {
+          margin-top: 190%;
+        }
 
        
         .tela1 {
@@ -104,14 +106,12 @@
             }
 
             .about .col-md-6 {
-              width: 100%;
+              width: 50%;
             }
 
-            .about .col-md-6 {
-              width: 100%;
-            }
+           
             .img-visao img {
-              width: 100%;
+              width: 50%;
               height: 450px;
             }
 
@@ -139,6 +139,32 @@
                 align-items: center;
               }
 
+        }
+
+
+        @media (max-width: 400px) {
+          #contato {
+            padding: 20px;
+          }
+          
+          .col {
+            width: 100% !important;
+          }
+          
+          .form-control {
+            width: 100%;
+          }
+          
+          .button-enviar {
+            text-align: center;
+          }
+
+          .imagem-alternativa {
+            display: block;
+          }
+          .imagem-padrão {
+            display: none;
+          }
         }
 
          
