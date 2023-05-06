@@ -20,7 +20,7 @@
         <div class="container" id="nav-container">
           
           <nav class="navbar navbar-expand-lg fixed-top">
-           
+        
             <a href="Index.html" class="navbar-brand">
                <img id="logo" src="IMG/logo_tcc.png" alt="E-PLANNER"> E-PLANNER  </a>
              
@@ -105,16 +105,19 @@
 
              <!--Imagens do carrossel-->
 
-    <div class="slide primeiro">
-        <img srcset="IMG/IMAGEM_CATEGORIA.png" alt="Imagem 1" />
-      </div>
-      <div class="slide">
-        <img srcset="IMG/IMAGEM_AGENDAMENTO.png" alt="Imagem 1"/>
-      </div>
-      <div class="slide">
-        <img src="IMG/IMAGEM_GRAFICO.png" alt="Imagem 1"/>
-      </div>
-    
+             <div class="slide primeiro">
+              <img src="IMG/IMAGEM_CATEGORIA.png" alt="Imagem 1" class="imagem-padrão" />
+              <img src="IMG/IMAGEM_RESPONISIVA_CATEGORIA.png" alt="Imagem 1 - Responsivo" class="imagem-alternativa" />
+            </div>
+            <div class="slide">
+              <img src="IMG/IMAGEM_AGENDAMENTO.png" alt="Imagem 1" class="imagem-padrão " />
+              <img src="IMG/IMAGEM_RESPONSIVA_AGENDAMENTO.png" alt="Imagem 1 - Responsivo" class="imagem-alternativa" />
+            </div>
+            <div class="slide">
+              <img src="IMG/IMAGEM_GRAFICO.png" alt="Imagem 1" class="imagem-padrão " />
+              <img src="IMG/IMAGEM_RESPONSIVA_GRAFICO.png" alt="Imagem 1 - Responsivo" class="imagem-alternativa" />
+            </div>
+            
        <!--Navegação-->
 
     <div class="navigation-auto">
@@ -141,27 +144,6 @@
 
 
 
-<!--<div class="grid-container-3">
-
-  <div class="row">
-    <div class="row item-3">
-      <h2>Quem somos</h2>
-      <p >Nós somos um grupo de desenvolvedores apaixonados por educação financeira e por tecnologia, e estamos comprometidos em ajudar as pessoas a melhorar suas finanças pessoais por meio do nosso aplicativo.</p>
-    </div>
-    <div class="row item-4">
-      <h2>Visão</h2>
-      <p>Acreditamos que todos têm o direito de ter acesso à informação e recursos necessários para tomar decisões financeiras informadas e inteligentes.</p>
-    </div>
-    <div class="row item-5">
-      <h2>Tecnologia</h2>
-      <p >Utilizamos tecnologias de ponta e recursos interativos para garantir que nossos usuários possam aprender de maneira eficaz e agradável.</p>
-   
-    </div>
-    <div class="col item-6">
-      <img src="IMG/tela_visao.png">
-    </div>
-  </div>
-</div>-->
 <br><br><br>
 <div class="grid-container-3 about" id="sobre">
   <div >
@@ -349,8 +331,6 @@
 
   
     
-    <!--<button class="prev-button">&#8249;</button>
-    <button class="next-button">&#8250;</button>-->
 
 
 
@@ -383,56 +363,54 @@
 
 <footer class="grid-container-6" id="contato">
   <div class="row">
-    <div class="col links">
+    <div class="col-12 col-md-4 links">
       <br><br>
       <ul >
         <a href="Index.html" style="color: white;">
-        <li class="list-group-item">Inicio</li>
-      </a>
-      <a href="#slide-carrossel" style="color: white;">
-        <li class="list-group-item">Recursos</li>
-      </a>
-      <a href="#sobre" style="color: white;">
-        <li class="list-group-item">Sobre</li>
-      </a>
-        <li class="list-group-item">Fale Conosco</li>
-      
+          <li class="list-group-item">Inicio</li>
+        </a>
+        <a href="#slide-carrossel" style="color: white;">
+          <li class="list-group-item">Recursos</li>
+        </a>
+        <a href="#sobre" style="color: white;">
+          <li class="list-group-item">Sobre</li>
+        </a>
+        <a href="#contato" style="color: white;">
+        <li class="list-group-item ">Fale Conosco</li>
+        </a>
       </ul>
     </div>
 
-
-    <div class="col">
+    <div class="col-12 col-md-4">
       <br>
-        <div >
-          <br><br><br>
-          <label for="exampleFormControlInput1" class="form-label ">Email </label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  style="width: 80%">
-        </div>
-        <div >
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 80%"></textarea>
-        </div>
-        <br>
-        <div class="button-enviar">
+      <div >
+        <br><br><br>
+        <label for="exampleFormControlInput1" class="form-label ">Email </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  style="width: 80%">
+      </div>
+      <div >
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 80%"></textarea>
+      </div>
+      <br>
+      <div class="button-enviar">
         <button type="button" class="btn btn-light">
-          <a href="malito:byatriz.vieira@etec.sp.gov.br">Enviar</a></button>
-        </div>
-      
+          <a href="mailto:byatriz.vieira@etec.sp.gov.br">Enviar</a>
+        </button>
+      </div>
     </div>
 
-
-    <div class="col servicos">
+    <div class="col-12 col-md-4 servicos">
       <br><br><br>
-      <p ><a href="mailto:eplanner@gmail.com " >eplanner@gmail.com</a></p> 
-
+      <p><a href="mailto:eplanner@gmail.com" >eplanner@gmail.com</a></p> 
       <p><a href="tel: 11988116602" >Telefone: (11) 99999-9999</a></p>
-
-      <p >Politica de Privacidade</p>
-
-      <p >Termos de Serviço</p>
+      <p>Politica de Privacidade</p>
+      <p>Termos de Serviço</p>
      
     </div>
-  </div></footer>
+  </div>
+</footer>
+
 
 
  
@@ -448,6 +426,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <script src="JS/carrossel.js"></script>
 </body>
 </html>
