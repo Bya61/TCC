@@ -265,6 +265,7 @@ h1 {
         margin-top: 47%;
         display: flex;
         justify-content: center;
+        display: none;
     }
     
     .navigation-auto div:not(:last-child){
@@ -290,7 +291,12 @@ h1 {
     }*/
 
 
-
+   .button-carrossel {
+    display: none;
+   }
+   .next-button-carrossel {
+    display: none;
+   }
 
     
 
