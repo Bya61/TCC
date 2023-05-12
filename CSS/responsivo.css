@@ -180,6 +180,7 @@
           .carousel {
             width: 100%;
             height: 390px;
+            display: none;
             }
             
             /*Imagem visão*/
@@ -187,6 +188,7 @@
             .item-13 {
               margin-top: -90%;
               width: 100%;
+              display: none;
             }
             .image-container {
             width: 100%;
@@ -201,7 +203,62 @@
             width: 50%;
             height: auto;
             }
-        }
+
+            .grid-container-5 {
+              grid-template-columns: 1fr;
+            }
+            .logo img {
+              width: 5%;
+            }
+            .logo a {
+              font-size: 130%;
+            }
+            .icons svg {
+              width: 15%;
+            }
+
+            .grid-container-5 {
+              grid-template-columns: 1fr;
+              row-gap: 10px;
+              justify-content: center;
+            }
+            .icons {
+              display: flex;
+              justify-content: space-evenly;
+            }
+
+            .bi-chat-left-dots-fill {
+              display: none;
+            }
+
+           /* Ajustar o tamanho do formulário de contato */
+  #contato .col-12.col-md-4:nth-child(2) {
+    width: 100%;
+  }
+
+  /* Ajustar a largura dos elementos de formulário */
+  #contato input,
+  #contato textarea {
+    width: 100%;
+  }
+
+  /* Alinhar o botão Enviar à direita */
+  .button-enviar {
+    text-align: right;
+  }
+
+  /* Colocar as informações de contato na vertical */
+  .servicos p {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .links a{
+    font-size: 100%;
+  }
+
+
+      }
 
          
             
