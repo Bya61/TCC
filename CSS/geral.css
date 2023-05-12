@@ -508,10 +508,15 @@ das redes de cada desenvolvedor*/
 .logo {
   display: flex;
   padding: 1%;
+  color: white;
 }
 
+.logo:hover {
+  color: white;
+  }
 .logo a {
   font-size: 180%;
+  text-decoration: none;
  
 }
 
