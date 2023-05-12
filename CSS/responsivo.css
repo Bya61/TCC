@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Hammersmith+One&family=Poppins:wght@900&family=Sigmar&display=swap');
+
+
 @media screen and (max-width: 450px) {
     .container {
       display: block;
@@ -12,28 +15,36 @@
      }
     h1 {
       font-size: 360%;
-      margin-top: 15%;
       line-height: 150px;
       text-align:center;
       width: 100%;
+     
     }
   
     
     .img-fluid {
-      width: 150%;
-      height: 360px;
+      width: 100%;
+      height: 380px;
       display: flex;
-      
+    }
     
-  }
+  
   
   p {
-    font-size: 150%;
+    font-size: 170%;
     width:100%;
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-top: 1%;
   }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   
     .listra button{
       position:absolute;
@@ -121,11 +132,7 @@
                                 
                               }
            
-            .img-visao img {
-              width: 50%;
-              height: 450px;
-            }
-
+          
             .grid-container-3 {
               grid-template-columns: 100%;
             }
@@ -171,7 +178,7 @@
           }
 
           .imagem-alternativa {
-            display: block;
+            display: none;
           }
           .imagem-padrão {
             display: none;
@@ -185,11 +192,7 @@
             
             /*Imagem visão*/
 
-            .item-13 {
-              margin-top: -90%;
-              width: 100%;
-              display: none;
-            }
+           
             .image-container {
             width: 100%;
             display: none;
@@ -240,11 +243,16 @@
   #contato input,
   #contato textarea {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Alinhar o botão Enviar à direita */
   .button-enviar {
     text-align: right;
+    width: 80%;
+   height: 2px;
   }
 
   /* Colocar as informações de contato na vertical */
@@ -255,6 +263,25 @@
 
   .links a{
     font-size: 100%;
+  }
+
+  .links {
+    font-size: 70%;
+    width: 50%;
+  }
+
+  .grid-container-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .img-visao {
+    margin-top: 20px;
+    text-align: center;
   }
 
 
