@@ -39,12 +39,16 @@
     margin-top: 1%;
   }
 
-  .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
+  #logo {
+    max-width: 10%;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
   
     .listra button{
       position:absolute;
@@ -181,7 +185,7 @@
             display: none;
           }
           .imagem-padrão {
-            display: none;
+            display: block;
           }
 
           .carousel {
