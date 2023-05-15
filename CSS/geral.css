@@ -173,9 +173,9 @@ h1 {
 
     .slider {
     margin: 0 auto;
-    height:990px;
-    overflow: hidden;
-    width: 100%; 
+    height:900%;
+ 
+    width: 200%; 
     margin-left: auto;
     margin-right: auto; 
     background-color: rgb(232, 232, 232);
@@ -183,7 +183,7 @@ h1 {
 
     .slides {
         width: 400%;
-        height: 100px;
+        height: 00px;
         display: flex;
         
     }
@@ -193,13 +193,14 @@ h1 {
     }
     
     .slide {
-        width: 20%;
+        width: 10%;
+        height: 1400px;
         position: static;
     }
 
     .slide img {  
-        width: 10%;
-        height: 300px;
+        width: 100%;
+        height: 500px;
        
     }
 
@@ -235,14 +236,24 @@ h1 {
         margin-left: -25%;
     }
 
-    /*imagem que aparecerá na tela responsiva*/
-
-    .imagem-alternativa {
-      display: none;
-    }
+    
     
     #radio3:checked ~ .primeiro{
         margin-left: -50%;
+    }
+
+    #radio4:checked ~ .primeiro{
+      margin-left: -75%;
+  }
+
+  #radio5:checked ~ .primeiro{
+    margin-left: -100%;
+}
+
+/*imagem que aparecerá na tela responsiva*/
+
+    .imagem-alternativa {
+      display: none;
     }
     
     /*#radio4:checked ~ .primeiro{
@@ -349,9 +360,7 @@ h1 {
 
   
   
-  .carousel-images.active {
-    transform: translateX(-50%);
-  }
+ 
 
  
 
@@ -377,6 +386,16 @@ h1 {
     border: none;
     font-size: 40px;
  
+    color: black;
+   
+    cursor: pointer;
+  }
+
+  .prev-button-1, .next-button-1 {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+ display: none;
     color: black;
    
     cursor: pointer;
@@ -431,6 +450,10 @@ das redes de cada desenvolvedor*/
     margin: 0 auto;
     padding: 20px;
     background-color: #f0f0f0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     
     
   }
@@ -478,8 +501,15 @@ das redes de cada desenvolvedor*/
 
   .image-container {
     width: 10%;
+    flex: 1 0 100%;
+    max-width: 400px;
+    margin-right: 10px;
+    scroll-snap-align: start;
  
     
+  }
+  .image-container:last-of-type {
+    margin-right: 0;
   }
   
   
@@ -487,6 +517,21 @@ das redes de cada desenvolvedor*/
   #img-2:checked ~ #img-1 {
     margin-left: -25%;
 }
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+.image-container {
+  width: 25%;
+  max-width: 300px; /* adjust this value as needed */
+  
+}
+
 
 
 /*Estilização dos icones do rodapé*/
