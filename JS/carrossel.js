@@ -18,7 +18,7 @@ function nextImagem(){
 
 count++;
 
- if(count > 3){
+ if(count > 5){
 
  count = 1
 
