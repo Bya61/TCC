@@ -29,6 +29,9 @@
     .navbar-brand {
     padding: 0;
     color: white;
+  margin-top: 0.5%;
+  font-weight: bold;
+  margin-left: 1%;
     }
     
     .navbar-brand:hover {
@@ -36,7 +39,7 @@
     }
     
     #navbar-links a {
-    
+    margin-left: 1%;
     color: white;
     height: 60px;
     left: 100px;
@@ -135,7 +138,7 @@ h1 {
         justify-content: end;
         position: absolute;
         width: 100%;
-        height: 300px;
+        height: 500px;
         left: 0px;
         top: 590px;
         background:#2C3C51;
@@ -173,7 +176,7 @@ h1 {
 
     .slider {
     margin: 0 auto;
-    height:900%;
+    height:100PX;
  
     width: 200%; 
     margin-left: auto;
@@ -200,7 +203,7 @@ h1 {
 
     .slide img {  
         width: 100%;
-        height: 500px;
+        height: 100px;
        
     }
 
@@ -447,14 +450,12 @@ das redes de cada desenvolvedor*/
 }
   .carousel {
     width: 100%;
-    height: 800px;
+    height: 10px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f0f0f0;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+
     
     
   }
@@ -462,7 +463,7 @@ das redes de cada desenvolvedor*/
   .carousel-images {
     display: flex;
     width: 188%;
-    height: 800px;
+    height: 100%;
     overflow: hidden;
     flex-direction: row;
     justify-content:space-between;
