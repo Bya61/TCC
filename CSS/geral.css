@@ -94,7 +94,7 @@ h1 {
     font-style: normal;
     font-weight: bold;
     font-weight: 400;
-    font-size: 800%;
+    font-size: 100px;
     line-height: 130px;
     text-align: center;
     color: #2C3C51;
@@ -110,7 +110,6 @@ h1 {
 
    .texto-italico{
       font-style: italic;
-
     }
     
     p {
@@ -185,7 +184,7 @@ h1 {
     }
 
     .slides {
-        width: 400%;
+        width: 200%;
         height: 00px;
         display: flex;
         
