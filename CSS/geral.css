@@ -325,7 +325,7 @@ h1 {
     .grid-container-3 {
         display: grid;
         grid-template-columns: 50% 50% ;
-        grid-template-rows: 100% 100% 100% 100% 100%;
+        grid-template-rows: 100% 100% 100% 100% ;
         gap: 10px;
         padding: 10px;
        justify-content: center;
@@ -341,15 +341,15 @@ h1 {
      
 
     .about p{
-        font-size: 200%;
-      padding: 10%;
+        font-size: 50%;
+      padding: 100%;
         text-align: justify;
         display: flex;
         justify-content: center;
     }
 
     .about h2 {
-      font-size: 250%;
+      font-size: 200%;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -385,7 +385,7 @@ h1 {
     justify-content: space-between;
   }
   
-  .prev-button, .next-button {
+  /* .prev-button, .next-button {
     background: transparent;
     border: none;
     font-size: 40px;
@@ -403,7 +403,26 @@ h1 {
     color: black;
    
     cursor: pointer;
-  }
+  } */
+
+  .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
   
 
   .carousel-images img {
@@ -450,11 +469,13 @@ das redes de cada desenvolvedor*/
 }
   .carousel {
     width: 100%;
-    height: 10px;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
     background-color: #f0f0f0;
     flex-wrap: nowrap;
+    display: flex;
+    align-items: first baseline;
 
     
     
@@ -463,18 +484,17 @@ das redes de cada desenvolvedor*/
   .carousel-images {
     display: flex;
     width: 188%;
-    height: 100%;
+    height: 100px;
     overflow: hidden;
     flex-direction: row;
-    justify-content:space-between;
-   
-    justify-content: space-around;
+ 
+
     
     
   }
 
   .image-container:hover{
-    width: 12%;
+    width: 102%;
 
   }
 
@@ -493,7 +513,7 @@ das redes de cada desenvolvedor*/
   }
   
   .carousel-images img {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0 0 0 10px ;
@@ -502,7 +522,8 @@ das redes de cada desenvolvedor*/
   }
 
   .image-container {
-    width: 10%;
+    width: 20%;
+    height: 100px;
     flex: 1 0 100%;
     max-width: 400px;
     margin-right: 10px;

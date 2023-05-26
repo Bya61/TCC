@@ -18,7 +18,7 @@ function nextImagem(){
 
 count++;
 
- if(count > 5){
+ if(count > 4){
 
  count = 1
 
@@ -210,6 +210,12 @@ for (var i = 0; i < imagens.length; i++) {
     this.classList.remove("hover");
   });
 }
+
+
+
+
+
+
 
 
 
