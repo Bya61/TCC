@@ -1,0 +1,117 @@
+/* Estilos para o carrossel Glider.js */
+.glider-contain {
+  position: relative;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.glider {
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+  background-color: #D9D9D9;
+}
+
+.glider img {
+  padding-bottom: 10px;
+  padding-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-item {
+  flex: 0 0 calc(100% / 3); /* Mostrar 3 imagens por vez */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Alinhar o nome da imagem abaixo da imagem */
+  font-size: 20px; /* Diminuir a fonte */
+  padding: 0 10px;
+}
+
+.glider::-webkit-scrollbar {
+  display: none; /* Remover a barra de rolagem no Chrome e Safari */
+}
+
+.glider > div {
+  scroll-snap-align: start;
+  flex: 0 0 33.333%; /* Mostrar 3 imagens por vez */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinhar o nome da imagem abaixo da imagem */
+  font-size: 20px; /* Diminuir a fonte */
+  padding: 0 10px;
+}
+
+/* Estilos para os dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dots button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.dots button.active {
+  background: black;
+}
+
+/* Estilos para os botões de navegação */
+.glider-prev,
+.glider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.glider-prev {
+  left: 10px;
+}
+
+.glider-next {
+  right: 10px;
+}
+/* Estilização dos ícones de seta */
+.glider-prev:before,
+.glider-next:before {
+  content: "<";
+}
+
+.glider-next:before {
+  content: ">";
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-description {
+  text-align: center;
+}
