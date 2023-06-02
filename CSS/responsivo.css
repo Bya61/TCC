@@ -364,6 +364,12 @@
         }
       }
 
+      @media screen and (min-width: 480px) {
+        .text-footer {
+        display: none;
+        }
+      }
+
 
 
 
