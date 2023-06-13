@@ -1,3 +1,4 @@
+
 .image-name {
   display: flex;
   align-items: center;
@@ -107,7 +108,10 @@
 }
 .card-gustavo {
   display: flex;
-  width: 100%;
+  width: 900px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -161,10 +165,6 @@
   font-size: 3rem;
   font-family: 'Inter', serif;
 }
-
-.space {
-  height: 100vh;
-}
 /*Carrossel dos desenvolvedores*/
 
 @media (max-width: 768px) {
@@ -190,16 +190,7 @@
   .glider-next {
     display: none; /* Remover os botões de navegação */
   }
-  .titulo-g {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10%;
-  }
-  .titulo-g h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    text-align: center;
-  }
+
   
 .mid__container {
   width: 100%;
@@ -275,20 +266,8 @@
   padding: 5%;
   justify-content: center;
 }
-
-.card-g{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120%;
-  height: 100%;
-  padding-bottom: 20px;
-}
-.card-gustavo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
+.card-g {
+  width: 100%;
 }
 
 }
