@@ -969,6 +969,19 @@ input[type="radio"] {
     align-items: center;
   }
 
+  /*Icone de porcentagem*/
+
+  .rounded-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
+
   .box-azul {
     justify-content: left;
     align-items: left;

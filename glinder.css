@@ -85,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 30px;
   margin: unset;
 
@@ -96,6 +96,7 @@
   align-self: center;
   width: 16px;
   height: 20px;
+  font-size: 100px;
 }
 
 
